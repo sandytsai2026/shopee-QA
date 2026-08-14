@@ -10,6 +10,18 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background: #f0f2f5; color: #333; }
         .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
         h1 { font-size: 24px; margin-bottom: 20px; color: #ff6600; display: flex; align-items: center; gap: 10px; }
+        .shopee-logo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: #ee4d2d;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 18px;
+        }
         .search-box { width: 100%; padding: 15px; font-size: 16px; border: 2px solid #ddd; border-radius: 8px; margin-bottom: 20px; outline: none; transition: border-color 0.3s; box-sizing: border-box; }
         .search-box:focus { border-color: #ff6600; }
         .result-count { font-size: 14px; color: #666; margin-bottom: 15px; }
@@ -33,7 +45,10 @@
 </head>
 <body>
 <div class="container">
-    <h1>💬 蝦皮聊聊客服助手</h1>
+    <h1>
+        <span class="shopee-logo">蝦</span>
+        蝦皮聊聊客服助手
+    </h1>
     <input type="text" id="query" class="search-box" oninput="search()" placeholder="請輸入客戶的問題或關鍵字 (例如：發票、退貨、保固)...">
     <div id="result-count" class="result-count">請輸入關鍵字進行搜尋</div>
     <div id="results"></div>
